@@ -27,7 +27,7 @@ Then update the score of the student for that quiz
 
 Scenario: non student try to answer the quiz to student
 Given there is an option to select as the right option for the student 
-When the asnwer question function in the student object is called
+When the answer question function in the student object is called
 Then does nothing since the student does not existing
 
 Scenario: student submit the quiz to student
