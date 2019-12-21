@@ -8,3 +8,6 @@ This is in the react debug folder
 ### Command to Run Test
 
 `python -m unittest`
+
+## Gherkins Script
+The gherkins script is located in the test folder also
