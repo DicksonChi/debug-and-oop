@@ -3,34 +3,34 @@ Given there is a class for the teacher to teach
 When the assign function in the teacher object is called
 Then add the class to the teacher list of class 
 
-Scenario: student join a class
+Scenario: student joins a class
 Given there is a class for the student to join
 When the join function in the student object is called
 Then add the student to the class list of students 
 
-Scenario: teacher create the quiz
+Scenario: teacher creates the quiz
 Given there are questions to make up the quiz 
 And the questions have options
 When the create quiz function in the teacher object is called
 Then add the quiz to the class list of quiz
 
-Scenario: teacher assign the quiz to student
+Scenario: teacher assigns the quiz to students
 Given there is a quiz to assign to the student 
 And the questions have options
 When the create quiz function in the teacher object is called
 Then add the student to the quiz list of students
 
-Scenario: student answer the quiz to student
-Given there is an option to select as the right option for the student 
-When the asnwer question function in the student object is called
+Scenario: student answer the quiz to class
+Given there is an option to select options as the right option for the student 
+When the answer question function in the student object is called
 Then update the score of the student for that quiz
 
-Scenario: non student try to answer the quiz to student
+Scenario: non student try to answer the quiz to teacher
 Given there is an option to select as the right option for the student 
-When the answer question function in the student object is called
+When the asnwer question function in the student object is called
 Then does nothing since the student does not existing
 
-Scenario: student submit the quiz to student
+Scenario: student submit the quiz to teacher
 Given there is a type of submission stated  
 When the submit function in the student object is called
 Then update the submission type of the student for that quiz
